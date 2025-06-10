@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda | Feria Eco Itinerante</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="nav">
+        <div class="nav-container">
+            <span class="logo">Feria Eco</span>
+            <nav class="nav-menu">
+                <a href="index.html#inicio">Inicio</a>
+                <a href="index.html#proximas">Paradas</a>
+                <a href="index.html#sobre">Nosotros</a>
+                <a href="index.html#contacto">Contacto</a>
+                <a href="tienda.html">Tienda</a>
+                <a href="#" id="abrir-carrito">🛒 Carrito <span id="contador-carrito">(0)</span></a>
+                </button>
+
+                <button id="modo-btn" class="modo-toggle" aria-label="Modo oscuro">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 1012 21a9 9 0 009-8.21z" />
+                    </svg>
+                </button>
+                <button id="btn-contraste" class="modo-toggle" aria-label="Modo alto contraste">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm1 6h-2v3H8v2h3v2.26a4.5 4.5 0 1 0 2 0V13h4v-2h-4V8z" />
+                    </svg>
+                </button>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="section fade-in" style="margin-top: 120px;">
+        <h2>Entradas a la feria</h2>
+        <div class="grid" id="productos">
+            <div class="producto card">
+                <img src="src/Rosario.jpg" alt="Rosario">
+                <div class="producto-info">
+                    <h3>Entrada Rosario</h3>
+                    <p>$25000</p>
+                    <div class="producto-controles">
+                        <input type="number" value="1" min="1">
+                        <button class="agregar-carrito" data-id="1" data-nombre="Entrada Rosario"
+                            data-precio="25000">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto card">
+                <img src="src/Cordoba.jpg" alt="Cordoba">
+                <div class="producto-info">
+                    <h3>Entrada Cordoba</h3>
+                    <p>$25000</p>
+                    <div class="producto-controles">
+                        <input type="number" value="1" min="1">
+                        <button class="agregar-carrito" data-id="2" data-nombre="Entrada Cordoba"
+                            data-precio="25000">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto card">
+                <img src="src/Mendoza.jpg" alt="Mendoza">
+                <div class="producto-info">
+                    <h3>Entrada Mendoza</h3>
+                    <p>$25000</p>
+                    <div class="producto-controles">
+                        <input type="number" value="1" min="1">
+                        <button class="agregar-carrito" data-id="2" data-nombre="Entrada Mendoza"
+                            data-precio="25000">Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="producto card">
+                <img src="src/laplata.jpg" alt="La Plata">
+                <div class="producto-info">
+                    <h3>La Plata</h3>
+                    <p>$25000</p>
+                    <div class="producto-controles">
+                        <input type="number" value="1" min="1">
+                        <button class="agregar-carrito" data-id="3" data-nombre="Entrada La Plata"
+                            data-precio="25000">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="section fade-in" style="margin-top: 120px;">
+            <h2>Productos Ecologicos</h2>
+            <div class="grid" id="productos">
+                <div class="producto card">
+                    <img src="src/huerta en casa.png" alt="Huerta en casa">
+                    <div class="producto-info">
+                        <h3>Kit de huerta en casa</h3>
+                        <p>$10000</p>
+                        <div class="producto-controles">
+                            <input type="number" value="1" min="1">
+                            <button class="agregar-carrito" data-id="1" data-nombre="Huerta"
+                                data-precio="10000">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto card">
+                    <img src="src/ecobottle.png" alt="Botella">
+                    <div class="producto-info">
+                        <h3>Botella Ecologica</h3>
+                        <p>$15000</p>
+                        <div class="producto-controles">
+                            <input type="number" value="1" min="1">
+                            <button class="agregar-carrito" data-id="2" data-nombre="Botella"
+                                data-precio="15000">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto card">
+                    <img src="src/bambu.png" alt="Cepillos bambu">
+                    <div class="producto-info">
+                        <h3>Cepillos de bambu x4</h3>
+                        <p>$5000</p>
+                        <div class="producto-controles">
+                            <input type="number" value="1" min="1">
+                            <button class="agregar-carrito" data-id="2" data-nombre="Cepillos"
+                                data-precio="5000">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="producto card">
+                    <img src="src/bag.png" alt="Bolso de tela">
+                    <div class="producto-info">
+                        <h3>EcoBolsa de tela</h3>
+                        <p>$15000</p>
+                        <div class="producto-controles">
+                            <input type="number" value="1" min="1">
+                            <button class="agregar-carrito" data-id="3" data-nombre="Entrada La Plata"
+                                data-precio="1500">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <aside id="carrito" class="carrito oculto">
+            <button id="cerrar-carrito">×</button>
+            <h2>Tu carrito</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: $<span id="total">0</span></p>
+            <button id="comprar">Comprar</button>
+        </aside>
+
+        <footer class="footer" id="footer">
+            <div class="footer-contenido">
+                <p>© Carlos Lautaro Gobbo - 2025 Feria Eco Itinerante</p>
+                <img src="img/LogoUADE.png" alt="Logo UADE" class="logo-uade" />
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+        <script src="tienda.js"></script>
+</body>
+
+</html>

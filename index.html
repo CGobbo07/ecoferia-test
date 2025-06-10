@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feria Eco Itinerante</title>
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+
+  <header class="nav">
+    <div class="nav-container">
+      <span class="logo">Feria Eco</span>
+      <nav class="nav-menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#proximas">Paradas</a>
+        <a href="#sobre">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="tienda.html">Tienda</a>
+
+        <button id="modo-btn" class="modo-toggle" aria-label="Modo oscuro">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 0111.21 3 7 7 0 1012 21a9 9 0 009-8.21z" />
+          </svg>
+        </button>
+        <button id="btn-contraste" class="modo-toggle" aria-label="Modo alto contraste">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm1 6h-2v3H8v2h3v2.26a4.5 4.5 0 1 0 2 0V13h4v-2h-4V8z" />
+          </svg>
+        </button>
+
+      </nav>
+    </div>
+  </header>
+
+
+
+  <main class="hero" id="inicio">
+    <video autoplay muted loop playsinline class="video-fondo">
+      <source src="src/intro.mp4" type="video/mp4" />
+    </video>
+
+
+    <div class="container fade-in">
+      <h1 class="title">Feria Eco Itinerante</h1>
+      <p class="subtitle">Conectamos personas y ciudades a través de la sustentabilidad</p>
+      <a href="#proximas" class="button">Ver próximas paradas</a>
+    </div>
+  </main>
+
+  <section id="proximas" class="section fade-in">
+    <h2>Próximas Paradas</h2>
+    <div class="paradas-grid">
+      <div class="parada">
+        <div class="icono">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#6b8f71" viewBox="0 0 24 24" width="28" height="28">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
+          </svg>
+        </div>
+        <h3>Rosario</h3>
+        <p>15 al 17 de agosto</p>
+      </div>
+
+      <div class="parada">
+        <div class="icono">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#6b8f71" viewBox="0 0 24 24" width="28" height="28">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
+          </svg>
+        </div>
+        <h3>Córdoba</h3>
+        <p>22 al 24 de agosto</p>
+      </div>
+
+      <div class="parada">
+        <div class="icono">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#6b8f71" viewBox="0 0 24 24" width="28" height="28">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
+          </svg>
+        </div>
+        <h3>La Plata</h3>
+        <p>5 al 7 de septiembre</p>
+      </div>
+
+      <div class="parada">
+        <div class="icono">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#6b8f71" viewBox="0 0 24 24" width="28" height="28">
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
+          </svg>
+        </div>
+        <h3>Mendoza</h3>
+        <p>19 al 21 de septiembre</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre fade-in">
+    <h2>Sobre la Feria</h2>
+    <p class="intro">
+      La Feria Eco Itinerante es un espacio de encuentro, aprendizaje y acción colectiva. Recorremos ciudades
+      promoviendo la sustentabilidad, la educación ambiental y la participación ciudadana.
+    </p>
+
+    <div class="sobre-grid">
+      <div class="bloque">
+        <div class="icono-svg">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#6b8f71" viewBox="0 0 24 24">
+            <path d="M12 2C10.8 4.5 8.6 7.4 6 9c-3.2 2-5 4.7-5 7 0 2.8 2.2 5 5 5 3.3 0 6-3.7 6-8V2z" />
+          </svg>
+        </div>
+        <h3>Misión</h3>
+        <p>Fomentar hábitos responsables con el ambiente a través de actividades educativas e inclusivas.</p>
+      </div>
+
+      <div class="bloque">
+        <div class="icono-svg">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#6b8f71" viewBox="0 0 24 24">
+            <path
+              d="M12 2C6.5 2 2 6.5 2 12c0 5.2 4 9.5 9 9.9V13H9v-2h2v-1c0-1.1.9-2 2-2h3V7.1c2 .9 3.5 2.6 3.9 4.7.1.5.1.9.1 1.4 0 5.5-4.5 10-10 10S2 17.5 2 12 6.5 2 12 2z" />
+          </svg>
+        </div>
+        <h3>Visión</h3>
+        <p>Construir una red de ciudades conscientes conectadas por la acción ecológica y la comunidad.</p>
+      </div>
+
+      <div class="bloque">
+        <div class="icono-svg">
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#6b8f71" viewBox="0 0 24 24">
+            <path d="M2 12.5l5.5 5.5 4-4 3 3L22 9.5 20.5 8l-6 6-3-3-4 4L4 11z" />
+          </svg>
+        </div>
+        <h3>Objetivo</h3>
+        <p>Impulsar el cambio social desde lo local, uniendo actores diversos en una misma causa: el planeta.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sobre" class="grid-section fade-in" id="actividades">
+    <h2>Actividades Destacadas</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="src/huerta.gif" alt="Huerta urbana" />
+        <div class="overlay">Taller de Huerta Urbana</div>
+      </div>
+      <div class="card">
+        <img src="src/reciclar.gif" alt="Reciclaje" />
+        <div class="overlay">Reciclaje</div>
+      </div>
+      <div class="card">
+        <img src="src/energia solar.gif" alt="Energía solar" />
+        <div class="overlay">Energía Solar</div>
+      </div>
+      <div class="card">
+        <img src="src/energia solar.gif" alt="Comida sustentable" />
+        <div class="overlay">Comida Sustentable</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="frase" class="frase fade-in">
+    <div class="decoracion">
+      <svg class="hoja" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" fill="#6b8f71">
+        <path d="M12 2C7 4 4 8 4 13a8 8 0 0016 0c0-5-3-9-8-11zm0 2c4 2 6 5 6 9a6 6 0 01-12 0c0-4 2-7 6-9z" />
+      </svg>
+      <div class="linea"></div>
+    </div>
+    <p>
+      “El cambio real comienza cuando la comunidad se une por un futuro
+      sustentable.”
+    </p>
+  </section>
+
+
+  <section id="contacto" class="contacto fade-in">
+    <h2>Contacto</h2>
+    <p class="intro">¿Querés sumarte o tenés una propuesta? Escribinos:</p>
+
+    <form id="contactForm" class="formulario">
+      <div class="campo">
+        <input type="text" id="nombre" name="nombre" required />
+        <label for="nombre">Nombre</label>
+      </div>
+      <div class="campo">
+        <input type="email" id="email" name="email" required />
+        <label for="email">Email</label>
+      </div>
+      <div class="campo">
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <label for="mensaje">Mensaje</label>
+      </div>
+      <button type="submit">Enviar mensaje</button>
+      <div id="mensajeExito" class="mensaje-exito">¡Mensaje enviado con éxito! ✅</div>
+    </form>
+  </section>
+</body>
+
+<footer class="footer" id="footer">
+  <div class="footer-contenido">
+    <p>© Carlos Lautaro Gobbo - 2025 Feria Eco Itinerante</p>
+    <img src="img/LogoUADE.png" alt="Logo UADE" class="logo-uade" />
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
